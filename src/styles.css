@@ -1,0 +1,36 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{margin:0;background:#0d0d0d;color:#f2f2f2}
+button,input{font:inherit}
+button{border:0;border-radius:10px;padding:11px 15px;background:#f2f2f2;color:#111;font-weight:700;cursor:pointer}
+button:disabled{opacity:.4;cursor:not-allowed}
+button.secondary,.fileButton.secondary{background:#292929;color:#f2f2f2}
+button.danger{background:#4a1c1c;color:#fff}
+.app{width:min(94vw,1050px);margin:auto;padding:36px 0 80px}
+header{margin-bottom:24px}
+.eyebrow{font-size:11px;letter-spacing:.16em;opacity:.55;font-weight:800}
+h1{font-size:clamp(38px,8vw,70px);line-height:1;margin:7px 0}
+h2{font-size:28px;margin:5px 0 0}
+header p{color:#aaa;max-width:700px}
+.card{background:#171717;border:1px solid #303030;border-radius:17px;padding:19px;margin:15px 0}
+label{display:block;font-size:13px;margin-bottom:8px;color:#bbb}
+.inputRow{display:grid;grid-template-columns:1fr auto auto;gap:9px}
+input{width:100%;border:1px solid #404040;background:#0c0c0c;color:#fff;border-radius:10px;padding:13px}
+.status{margin-top:13px;color:#aaa;min-height:22px}
+.error{margin-top:12px;color:#ffb4b4;background:#3a1717;padding:10px 12px;border-radius:10px}
+.hint,.muted,.small{color:#858585}
+.hint{font-size:12px;line-height:1.5;margin-top:12px}
+.small{font-size:12px;margin-top:4px;word-break:break-all}
+.sectionTitle{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.pill{border:1px solid #444;border-radius:999px;padding:5px 9px;font-size:11px;color:#aaa}
+.item{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid #2c2c2c;padding:13px 0}
+.item:first-of-type{border-top:0}
+.featured{background:#202020;border-radius:11px;padding:13px;margin:9px 0}
+.path{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+.actions,.row{display:flex;gap:8px;flex-wrap:wrap}
+.fileButton{display:inline-flex;align-items:center;cursor:pointer;border-radius:10px;padding:11px 15px;font-weight:700}
+.viewerOverlay{position:fixed;inset:0;background:#000e;z-index:1000;padding:20px}
+.viewerPanel{height:100%;background:#111;border:1px solid #3a3a3a;border-radius:15px;display:flex;flex-direction:column;overflow:hidden}
+.viewerHeader{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 15px;border-bottom:1px solid #333}
+.viewerPanel iframe{flex:1;border:0;background:#fff;width:100%}
+@media(max-width:700px){.inputRow{grid-template-columns:1fr}.item{align-items:flex-start;flex-direction:column}.actions{width:100%}.actions button{flex:1}.sectionTitle{align-items:flex-start;flex-direction:column}}
